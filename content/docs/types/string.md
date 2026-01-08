@@ -230,7 +230,7 @@ const schema = vine.object({
   password: vine
     .string()
     .confirmed({
-      as: 'passwordConfirmation'
+      confirmationField: 'passwordConfirmation'
     })
 })
 ```
